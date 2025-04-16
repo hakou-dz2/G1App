@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <EditText
         android:id="@+id/et_username"

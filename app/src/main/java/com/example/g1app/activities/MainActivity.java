@@ -1,4 +1,4 @@
-package com.example.g1app;
+package com.example.g1app.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.g1app.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String text_username = username.getText().toString();
                 String text_password = password.getText().toString();
-                if(text_username.equals("admin") && text_password.equals("admin")){
+                if(text_username.equals("") && text_password.equals("")){
                     Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                     intent.putExtra("username",text_username);
                     startActivity(intent);

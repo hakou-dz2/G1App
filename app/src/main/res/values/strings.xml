@@ -6,4 +6,6 @@
     <string name="forgot_password">Forgot Password</string>
     <string name="email">Email</string>
     <string name="send_email">Send email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

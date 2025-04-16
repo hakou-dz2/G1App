@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".activities.SecondActivity">
 
     <TextView
         android:id="@+id/tv_welcome"
@@ -18,11 +18,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_course"
-        android:layout_width="match_parent"
-        android:layout_height="641dp"
-        android:layout_margin="20dp"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_cont"
+        android:name="com.example.g1app.fragments.ListFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
